@@ -25,4 +25,37 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  text-shadow: none;
+  text-overflow: ellipsis;
+  text-align-last: auto;
+  text-indent: 0;
+  text-justify: auto;
+  text-transform: none;
+  text-decoration: none;
+  text-shadow: none;
+  text-overflow: ellipsis;
+  text-align-last: auto;
+  text-indent: 0;
+  text-justify: auto;
+  text-decoration: none;
+  text-shadow: none;
+  
+
 }
