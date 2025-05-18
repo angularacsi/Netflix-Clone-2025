@@ -1,0 +1,57 @@
+.row {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.row h2 {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.row_posters {
+  display: flex;
+  flex-wrap: wrap;              /* ✅ enables wrapping to next line */
+  gap: 15px;                    /* Adds spacing between posters */
+  padding: 20px;
+  justify-content: flex-start; /* Aligns posters to the left */
+}
+
+.row_poster {
+  object-fit: cover;
+  width: 150px;                /* Fixed width for consistent grid */
+  height: 100px;
+  transition: transform 450ms;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.row_posterLarge {
+  height: 250px;
+  width: 170px;
+  transition: transform 450ms;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.09);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .row_poster {
+    width: 100px;
+    height: 70px;
+  }
+
+  .row_posterLarge {
+    width: 120px;
+    height: 180px;
+  }
+}
